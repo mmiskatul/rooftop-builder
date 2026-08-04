@@ -114,7 +114,7 @@ function GalleryPage() {
       </Section>
 
       {/* ---------- Lightbox ---------- */}
-      {openIndex !== null ? (
+      {openPhoto ? (
         <div
           role="dialog"
           aria-modal="true"
@@ -132,12 +132,12 @@ function GalleryPage() {
           </button>
           <figure className="max-h-full max-w-5xl" onClick={(e) => e.stopPropagation()}>
             <img
-              src={PHOTOS[openIndex].src}
-              alt={PHOTOS[openIndex].alt}
+              src={openPhoto.src}
+              alt={openPhoto.alt}
               className="max-h-[80vh] w-full rounded-lg object-contain"
             />
             <figcaption className="mt-4 text-center text-sm text-muted-foreground">
-              {PHOTOS[openIndex].alt}
+              {openPhoto.alt}
             </figcaption>
           </figure>
         </div>
