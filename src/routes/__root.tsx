@@ -87,6 +87,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Rooftop Soi3" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Rooftop Soi3 — Rooftop Dining in Dhanmondi, Dhaka" },
+      { name: "twitter:title", content: "Rooftop Soi3 — Rooftop Dining in Dhanmondi, Dhaka" },
+      { property: "og:description", content: "Rooftop Soi3 is an open-air rooftop restaurant on Satmasjid Road, Dhanmondi — kebabs, naan, pasta and seafood under the Dhaka skyline." },
+      { name: "twitter:description", content: "Rooftop Soi3 is an open-air rooftop restaurant on Satmasjid Road, Dhanmondi — kebabs, naan, pasta and seafood under the Dhaka skyline." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bcfdda58-c4e0-495c-a992-5799158e061a/id-preview-b983136e--72bff1f8-0a5a-4c20-8b1a-d6974a261355.lovable.app-1785831704326.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/bcfdda58-c4e0-495c-a992-5799158e061a/id-preview-b983136e--72bff1f8-0a5a-4c20-8b1a-d6974a261355.lovable.app-1785831704326.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
