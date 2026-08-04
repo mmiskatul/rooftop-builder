@@ -52,7 +52,7 @@ function ReservationsPage() {
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const raw = Object.fromEntries(new FormData(e.currentTarget)) as Record<string, string>;
-    const result = schema.safeParse({ ...raw, notes: raw.notes ?? "" });
+    const result = schema.safeParse({ ...raw, notes: raw["notes"] ?? "" });
 
     if (!result.success) {
       const next: Errors = {};
@@ -235,7 +235,7 @@ function Field({
   children,
 }: {
   label: string;
-  error?: string;
+  error?: string | undefined;
   children: React.ReactNode;
 }) {
   return (

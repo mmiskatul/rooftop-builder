@@ -187,9 +187,9 @@ function ContactPage() {
                 <label className="block text-sm">
                   <span className="font-medium">Name</span>
                   <input name="name" className={inputClass} placeholder="Your name" />
-                  {errors.name ? (
+                  {errors['name'] ? (
                     <span role="alert" className="mt-2 block text-xs text-destructive">
-                      {errors.name}
+                      {errors['name']}
                     </span>
                   ) : null}
                 </label>
@@ -201,9 +201,9 @@ function ContactPage() {
                     className={inputClass}
                     placeholder="you@example.com"
                   />
-                  {errors.email ? (
+                  {errors['email'] ? (
                     <span role="alert" className="mt-2 block text-xs text-destructive">
-                      {errors.email}
+                      {errors['email']}
                     </span>
                   ) : null}
                 </label>
@@ -216,9 +216,9 @@ function ContactPage() {
                     className={inputClass}
                     placeholder="How can we help?"
                   />
-                  {errors.message ? (
+                  {errors['message'] ? (
                     <span role="alert" className="mt-2 block text-xs text-destructive">
-                      {errors.message}
+                      {errors['message']}
                     </span>
                   ) : null}
                 </label>
