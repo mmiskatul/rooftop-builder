@@ -43,6 +43,7 @@ const PHOTOS = [
 
 function GalleryPage() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const openPhoto = openIndex === null ? null : PHOTOS[openIndex];
 
   // Close the lightbox on Escape.
   useEffect(() => {
