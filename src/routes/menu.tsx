@@ -34,6 +34,7 @@ function Tags({ tags }: { tags?: MenuItem["tags"] }) {
     <span className="mt-2 flex flex-wrap gap-2">
       {tags.map((t) => {
         const meta = TAG_STYLE[t];
+        if (!meta) return null;
         const Icon = meta.icon;
         return (
           <span
